@@ -1,0 +1,426 @@
+/* Global Sittings */
+@font-face {
+  font-family: "Poppins Black", sans-serif;
+  src: url(Fonts/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+  font-family: "Poppins Bold", sans-serif;
+  src: url(Fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins ExtraBold", sans-serif;
+  src: url(Fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Poppins ExtraLight", sans-serif;
+  src: url(Fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Poppins Light", sans-serif;
+  src: url(Fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins Medium", sans-serif;
+  src: url(Fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins Regular", sans-serif;
+  src: url(Fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins SemiBold", sans-serif;
+  src: url(Fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Poppins Thin", sans-serif;
+  src: url(Fonts/Poppins/Poppins-Thin.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins Regular", sans-serif;
+  background-color: #eeeeee;
+}
+::selection {
+  background-color: #333e88;
+  color: #64ece5;
+}
+li :hover {
+  color: #5d6ee2;
+}
+button {
+  border-radius: 5px;
+  padding: 2rem 5rem;
+  border: none;
+  background-color: #333e88;
+  color: #eeeeee;
+  font-size: 2.5rem;
+  font-family: "Poppins Medium", sans-serif;
+  cursor: pointer;
+  transition: background 0.24s ease-in-out;
+}
+button:hover {
+  background-color: #eeeeee;
+  color: #141e61;
+}
+
+.support {
+  min-height: 4vh;
+  background-color: #0f044c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.support img {
+  height: 13px;
+  margin: 0 1rem 0 0;
+}
+.support h4 {
+  color: #eeeeee;
+  font-size: 1.2rem;
+  letter-spacing: 0.14ch;
+}
+
+/* Nav */
+.main-head {
+  min-height: 10vh;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#logo {
+  height: 70px;
+}
+
+.logo-container {
+  background-color: #141e61;
+  padding: 1.2rem;
+  display: flex;
+}
+nav ul {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul a {
+  text-decoration: none;
+  color: #141e61;
+  font-size: 3rem;
+  margin-left: 10rem;
+}
+
+/* Landing Page */
+
+#home {
+  height: 86vh;
+  /* background-color: #0f044c; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), transparent),
+    url(Images/landing.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-text {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home-text h1 {
+  font-size: 13rem;
+  color: #eeeeee;
+  font-family: "Poppins ExtraBold", sans-serif;
+}
+.home-text p {
+  font-size: 3.5rem;
+  color: #e9e9e9;
+  font-family: "Poppins-Thin", sans-serif;
+  margin-bottom: 5rem;
+}
+
+/* Services */
+.services {
+  min-height: 45vh;
+  /* background-color: antiquewhite; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(Images/back-cam.svg);
+  background-repeat: no-repeat;
+}
+.services-header {
+  font-size: 8rem;
+  margin: 0 0 1rem 0;
+  color: #141e61;
+  opacity: 0.2;
+}
+.service img {
+  height: 20rem;
+}
+.services-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.service {
+  background-color: #eeeeee93;
+  margin: 2rem;
+  border: 1px solid #a8a8a8;
+  border-radius: 20px;
+  padding: 0rem 2rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05); /* x y blur color */
+}
+
+.service-text h4 {
+  font-size: 2.8rem;
+  font-family: "Poppins Regular", sans-serif;
+  color: #141e61;
+  margin: 0rem 0 1rem 0;
+}
+.service-text p {
+  font-size: 1.72rem;
+  font-family: "Poppins Regular", sans-serif;
+  color: #313131;
+  line-height: 2rem;
+}
+
+/* Offers */
+#services {
+  min-height: 65vh;
+  background-color: #141e61;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#services h1 {
+  font-size: 8rem;
+  margin: 2rem 0 2rem 0;
+  color: rgb(235, 235, 235);
+  opacity: 0.2;
+}
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.offer-card {
+  background-color: #eeeeee;
+  /* padding: 2rem; */
+  margin: 2rem 4rem;
+  width: 30rem;
+  overflow: hidden;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.048),
+    0px 20px 20px rgba(0, 0, 0, 0.048);
+  border-radius: 20px;
+}
+.offer-card img {
+  height: 20rem;
+  background-position: center;
+  background-size: cover;
+}
+.card-discription {
+  padding: 2rem;
+}
+.card-discription h3 {
+  font-size: 2.3rem;
+  color: #141e61;
+  font-family: "Poppins Regular", sans-serif;
+  margin-bottom: 0.8rem;
+}
+.card-discription p {
+  font-size: 1.93rem;
+  font-family: "Poppins Regular", sans-serif;
+  color: #313131d7;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+/* application */
+#application {
+  min-height: 50vh;
+  background-image: linear-gradient(90deg, #0f044cde, transparent),
+    url(Images/New\ Administrative\ Capital.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.app-text {
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+.app-text h3 {
+  font-size: 4rem;
+  font-family: "Poppins Light", sans-serif;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+.app-text h1 {
+  font-size: 8rem;
+  font-family: "Poppins ExtraBold", sans-serif;
+  line-height: 9rem;
+}
+
+/*Media Query*/
+@media screen and (max-width: 834px) {
+  html {
+    font-size: 45%;
+  }
+  .support {
+    min-height: 3vh;
+  }
+  .support img {
+    height: 7px;
+    margin: 0 1rem 0 0;
+  }
+  .support h4 {
+    color: #eeeeee;
+    font-size: 1.2rem;
+    letter-spacing: 0.14ch;
+  }
+
+  #logo {
+    height: 60px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex: 1 1 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+  #home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+      url(Images/landing.png);
+  }
+  .main-head {
+    min-height: 13vh;
+    background-color: #eeeeee;
+    margin: auto;
+    width: 100%;
+  }
+  .logo-container {
+    background-color: #141e61;
+    padding: 1.2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .services-header {
+    font-size: 8rem;
+    margin: 0 0 1rem 0;
+    color: #141e61;
+    opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 45%;
+  }
+  .support {
+    min-height: 3vh;
+  }
+  .support img {
+    height: 7px;
+    margin: 0 1rem 0 0;
+  }
+  .support h4 {
+    color: #eeeeee;
+    font-size: 1.2rem;
+    letter-spacing: 0.14ch;
+  }
+  #logo {
+    height: 60px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex: 1 1 11rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+      url(Images/landing.png);
+  }
+  #home h1 {
+    font-size: 11rem;
+  }
+  #home p {
+    font-size: 3rem;
+  }
+  .main-head {
+    min-height: 13vh;
+    background-color: #eeeeee;
+    margin: auto;
+    width: 100%;
+  }
+  .logo-container {
+    background-color: #141e61;
+    padding: 1.2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
